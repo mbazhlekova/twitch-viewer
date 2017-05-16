@@ -18,6 +18,7 @@
     "react-fetch": "^0.0.9",
     "react-tap-event-plugin": "^2.0.1",
     "style-loader": "^0.17.0",
+    "url-loader": "^0.5.8",
     "webpack": "^2.4.1",
     "webpack-dev-server": "^2.4.5"
   },

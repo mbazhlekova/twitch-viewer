@@ -30,11 +30,17 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [{
-                    loader: 'style-loader'
-                },
-                {
-                    loader: 'css-loader'
-                }]}
+                        loader: 'style-loader'
+                    },
+                    {
+                        loader: 'css-loader'
+                    }
+                ]
+            },
+            {
+                test: /\.(png|jpg)$/,
+                loader: 'url-loader?limit=25000'
+            }
 
         ]
     },

@@ -1,12 +1,30 @@
 body {
-    background: #C9F2C7;
+    background: white;
+}
+
+nav {
+    background-color: #6441A4;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    
+}
+
+.logo {
+
+}
+
+.logo img {
+    height: auto;
+    max-width: 100px;
+    margin-left: 4%;
+    margin-top: .5%;
 }
 
 .cards {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
 }
 
 .card {
@@ -22,7 +40,6 @@ body {
     padding: 15px 0;
     background: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
 }
 
 a {
@@ -39,7 +56,7 @@ a {
     color: #57727C;
     font-size: 40px;
     text-align: center;
-     padding: 5px 15px;
+    padding: 5px 15px;
     border-top: 1px solid #D7DBDD;
     background-color: #EEF3F5;
     width: 100%;

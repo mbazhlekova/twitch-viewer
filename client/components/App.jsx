@@ -1,12 +1,13 @@
 import React from 'react';
-import Fetch from 'react-fetch';
 
 import Streaming from './Streaming.jsx';
+import Header from './Header.jsx';
 
 export default class App extends React.Component {
     render() {
         return (
             <div>
+                <Header/>
                 <Streaming/>
             </div>
         )
