@@ -1,7 +1,6 @@
 import React from 'react';
 import axios from 'axios';
 import async from 'async';
-import style from './style.css'
 
 export default class Streaming extends React.Component {
     constructor(props) {
@@ -11,7 +10,7 @@ export default class Streaming extends React.Component {
             channels: []
         }
     }
-
+    
     streamUrl(params) {
         return `https://api.twitch.tv/kraken/streams/${params}/?client_id=5j0r5b7qb7kro03fvka3o8kbq262wwm`;
     }
@@ -81,7 +80,7 @@ class DisplayStreamers extends React.Component {
                             </a>
                         else 
                             return <a key={i} className="card" href="">
-                                    <img className="offline" src=""/>
+                                    <img className="offline" src={require('./offline.jpg')}/>
                                     <h2>{e.name}</h2>
                                     <h3>offline</h3>
                                 </a>
