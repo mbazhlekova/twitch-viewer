@@ -68,10 +68,7 @@ class DisplayStreamers extends React.Component {
     render() {
         return <div className="container">
             <div className="cards">
-                {this.props.streams && this
-                    .props
-                    .streams
-                    .filter(x => x)
+                {this.props.streams && this.props.streams.filter(x => x)
                     .map((e, i) => {
                         if (e.channel) 
                             return <a key={i} className="card" href={e.channel.url || ''}>
@@ -81,7 +78,7 @@ class DisplayStreamers extends React.Component {
                             </a>
                         else 
                             return <a key={i} className="card" href="">
-                                <img className="offline" src={require('./offline.jpg')}/>
+                                <img className="offline" src={require('../../images/offline.jpg')}/>
                                 <h2>{e.name}</h2>
                                 <h3>offline</h3>
                             </a>
